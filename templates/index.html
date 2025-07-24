@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Predict California housing prices using machine learning." />
+  <title>California Housing Dashboard</title>
+
+  <!-- Fonts & Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f1f3f6, #e0e7ee);
+      color: #2c3e50;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #34495e;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background-color: #ffffffcc;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+      backdrop-filter: blur(10px);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    p, li {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    a.button {
+      display: inline-block;
+      background-color: #2980b9;
+      color: #fff;
+      padding: 14px 32px;
+      font-size: 1rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #1c5980;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #f4f6f8;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 1.5rem;
+      }
+
+      a.button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header with logo -->
+  <header>
+    <div class="title">California Housing Dashboard</div>
+    <img class="logo" src="{{ url_for('static', filename='logo.png') }}" alt="Logo" />
+  </header>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- Description Card -->
+    <div class="card">
+      <h2>🏠 Welcome to California Housing Price Predictor</h2>
+      <p>
+        Use our machine learning-powered tool to estimate California housing prices based on key demographic and environmental features.
+        The model is trained using the California Census dataset to ensure accuracy and reliability.
+      </p>
+      <a href="/predict" class="button">Start Prediction</a>
+    </div>
+
+    <!-- Dataset Info -->
+    <div class="card">
+      <h2>📊 Dataset Source</h2>
+      <p>
+        This application is built using the
+        <a href="https://www.dcc.fc.up.pt/~ltorgo/Regression/cal_housing.html" target="_blank">
+          California Housing Dataset
+        </a>
+        provided by the US Census Bureau.
+      </p>
+    </div>
+
+    <!-- Team Info -->
+    <div class="card">
+      <h2>👨‍💻 Project Contributor</h2>
+      <ul>
+        <li><strong>Sujen Purty</strong> — Data Science, Machine Learning, Backend & Frontend Development</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Sujen Purty | Built with Flask & Machine Learning
+  </footer>
+
+</body>
+</html>

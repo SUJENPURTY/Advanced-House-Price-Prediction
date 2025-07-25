@@ -56,7 +56,7 @@ Open http://127.0.0.1:5000/ in your browser to use the prediction interface.
 📊 Example
 Sample input fields:
 
-Number of bedrooms, bathrooms, population
+Number of bedrooms,population,latitude etc.
 
 Location-based features
 

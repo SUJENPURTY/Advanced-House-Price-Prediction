@@ -7,18 +7,8 @@ This project aims to build an end-to-end machine learning pipeline to predict ho
 
 ## 📁 Project Structure
 
-Advanced-House-Price-Prediction/
-├── artifacts/ # Contains model files and datasets
-├── Notebook/ # Jupyter notebooks (EDA, training, etc.)
-├── src/ # Source code
-│ ├── components/ # Core components: ingestion, transformation, training
-│ └── pipeline/ # Training and prediction pipeline
-├── templates/ # HTML templates for frontend
-├── static/ # CSS/JS or static files for Flask
-├── app.py # Flask application for model deployment
-├── requirements.txt # Project dependencies
-├── setup.py # Setup script for packaging
-└── .gitattributes # Git LFS file tracking
+<img width="817" height="458" alt="image" src="https://github.com/user-attachments/assets/60324a50-4fe2-433f-a324-dc7fb10b84e9" />
+
 
 
 
